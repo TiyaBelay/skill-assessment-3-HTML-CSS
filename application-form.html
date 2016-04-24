@@ -1,0 +1,35 @@
+<!-- {% extends 'base.html' %}
+
+{% block body %} -->
+<!doctype html>
+<html>
+<head>
+    <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Job Application</h1>
+    <link rel="stylesheet" href="./static/style.css">
+    <p>Complete the information below and click on the submit button for further
+        information.</p>
+
+    <form action="/application" method="POST">
+        <div><label for="firstname">First Name:</label> 
+        <input id="firstname" type="text" name="fstname">
+        <label for="lastname" class="bold">Last Name:</label>
+        <input id="lastname" type="text" name="lstname">
+        <br><label for="salary">Salary Requirements:</label>
+        <input id="salary" type="text" name="salaryreq">
+        <br><label for="position">Position:</label>
+            <select id="position" name="job">
+                <option value="softwareeng">Software Engineer</option>
+                <option value="qaeng">QA Engineer</option>
+                <option value="producteng">Product Manager</option>
+            </select>
+            <a href="/application"><br><input type="submit"></a></div>
+    </form>
+</body>
+</html>
+<!-- {% endblock %}
+ -->
+
